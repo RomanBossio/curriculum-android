@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- Ícono: Estudios -->
+        <ImageView
+            android:id="@+id/iconEstudios"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_school_24"
+            android:contentDescription="Ícono de estudios"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtEstudios"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Estudios:\n- Tecnicatura en Desarrollo de Software\n- Curso de Desarrollo Web"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/iconEstudios"
+            app:layout_constraintTop_toTopOf="@id/iconEstudios"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="12dp" />
+
+        <!-- Ícono: Experiencia -->
+        <ImageView
+            android:id="@+id/iconExperiencia"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/outline_add_home_work_24"
+            android:contentDescription="Ícono de experiencia"
+            app:layout_constraintTop_toBottomOf="@id/txtEstudios"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:id="@+id/txtExperiencia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Experiencia:\n- Proyecto Súbete\n- Sistema de gestión de pedidos\n- Sistema de gestion TBS"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/iconExperiencia"
+            app:layout_constraintTop_toTopOf="@id/iconExperiencia"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="12dp" />
+
+        <!-- Ícono: Conocimientos -->
+        <ImageView
+            android:id="@+id/iconConocimientos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/outline_code_24"
+            android:contentDescription="Ícono de conocimientos"
+            app:layout_constraintTop_toBottomOf="@id/txtExperiencia"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:id="@+id/txtConocimientos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Conocimientos:\n- Kotlin\n- Git\n- HTML/CSS/JS\n- SQL"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/iconConocimientos"
+            app:layout_constraintTop_toTopOf="@id/iconConocimientos"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="12dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
